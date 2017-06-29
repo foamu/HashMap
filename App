@@ -1,0 +1,27 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		HashMap<Integer, String> krychek = new HashMap<Integer, String>();
+
+		krychek.put(9, "Diamond");
+		krychek.put(7, "Dank");
+		krychek.put(5, "Bong");
+		krychek.put(3, "Realm");
+		krychek.put(1, "Hash");
+		krychek.remove(1);
+
+		for (Map.Entry<Integer, String> entry : krychek.entrySet()) {
+			int key = entry.getKey();
+			String value = entry.getValue();
+
+			System.out.println(key + ": " + value);
+
+		}
+
+	}
+
+}
